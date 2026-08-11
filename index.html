@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TerraLine Civil — Precision Civil Design Studio</title>
+  <meta name="description" content="TerraLine Civil is a civil design studio delivering grading, stormwater, hydrology, and solar PV civil design for developers, EPCs, and A/E firms across the United States.">
+  <meta property="og:title" content="TerraLine Civil — Precision Civil Design Studio">
+  <meta property="og:description" content="Grading, stormwater, hydrology, and solar civil design — from first contour to final permit.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="TerraLine Civil — home">
+        <svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M2 21c4-3.5 7-3.5 10.5 0S20 24.5 28 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M2 15c4-3.5 7-3.5 10.5 0S20 18.5 28 13" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M2 9c4-3.5 7-3.5 10.5 0S20 12.5 28 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">TerraLine<span class="brand-sub">Civil</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="btn btn-small btn-solid">Start a project</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#process" class="mobile-link">Process</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-menu-meta mono">TERRALINE CIVIL — LAHORE · SERVICING THE US</p>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <svg class="hero-contours" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <!-- flowing contours -->
+        <g class="contour-group">
+          <path pathLength="1000" d="M-40 640 C 220 560, 420 720, 700 640 S 1180 520, 1500 610"/>
+          <path pathLength="1000" d="M-40 700 C 240 620, 440 780, 720 700 S 1200 580, 1500 670"/>
+          <path pathLength="1000" d="M-40 760 C 260 680, 460 840, 740 760 S 1220 640, 1500 730"/>
+          <path pathLength="1000" d="M-40 820 C 280 740, 480 900, 760 820 S 1240 700, 1500 790"/>
+          <path pathLength="1000" class="accent-line" d="M-40 580 C 200 500, 400 660, 680 580 S 1160 460, 1500 550"/>
+        </g>
+        <!-- topo hill, upper right -->
+        <g class="hill-group">
+          <path pathLength="1000" d="M1005 285 C 1015 215, 1150 190, 1225 235 C 1300 280, 1275 380, 1170 398 C 1065 416, 995 355, 1005 285 Z"/>
+          <path pathLength="1000" d="M1045 290 C 1052 240, 1145 222, 1200 255 C 1255 288, 1238 355, 1160 368 C 1082 381, 1038 340, 1045 290 Z"/>
+          <path pathLength="1000" class="accent-line" d="M1085 295 C 1090 262, 1140 250, 1176 272 C 1212 294, 1200 332, 1152 340 C 1104 348, 1080 328, 1085 295 Z"/>
+          <path class="spot-el" d="M1128 296 l6 10 h-12 Z"/>
+          <text class="contour-label" x="1148" y="306">EL. 412.6</text>
+        </g>
+        <!-- property line -->
+        <g class="pl-group">
+          <path pathLength="1000" class="property-line" d="M860 480 L 1080 430 L 1300 465"/>
+          <rect class="pl-node" x="856" y="476" width="8" height="8"/>
+          <rect class="pl-node" x="1076" y="426" width="8" height="8"/>
+          <rect class="pl-node" x="1296" y="461" width="8" height="8"/>
+          <text class="contour-label" x="1090" y="418">PROPERTY LINE</text>
+        </g>
+      </svg>
+
+      <div class="container hero-inner">
+        <p class="eyebrow mono reveal">Civil Design Studio — Est. 2026</p>
+        <h1 class="hero-title reveal" data-delay="1">
+          Precision civil design, from first <em>contour</em> to final permit.
+        </h1>
+        <p class="hero-sub reveal" data-delay="2">
+          TerraLine Civil delivers grading, stormwater, hydrology, and solar civil
+          design for developers, EPCs, and A/E firms across the United States.
+        </p>
+        <div class="hero-cta reveal" data-delay="3">
+          <a href="#contact" class="btn btn-solid">Start a project <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a href="#services" class="btn btn-ghost">Explore services</a>
+        </div>
+      </div>
+
+      <div class="container hero-stats reveal" data-delay="4">
+        <div class="stat">
+          <span class="stat-value">CO · CA · NC</span>
+          <span class="stat-label mono">US states delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">$20K+</span>
+          <span class="stat-label mono">Design value shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">NABCEP</span>
+          <span class="stat-label mono">Certified in-house</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">&lt; 24 h</span>
+          <span class="stat-label mono">Inquiry response</span>
+        </div>
+      </div>
+
+      <div class="hero-fig mono" aria-hidden="true">FIG. 00 — TERRALINE CIVIL / SITE NO. 001</div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index mono">01</span>
+          <h2>What we design</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-tag mono">SERVICES</span>
+        </div>
+
+        <div class="services-grid" data-stagger>
+          <article class="card reveal">
+            <div class="card-num mono">S.01</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 17c3-2.6 6-2.6 9 0s6 2.6 9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M3 12c3-2.6 6-2.6 9 0s6 2.6 9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M3 7c3-2.6 6-2.6 9 0s6 2.6 9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Grading &amp; Site Design</h3>
+            <p>Optimized grading plans, earthwork balancing, and site layouts in Civil&nbsp;3D — buildable, permit-ready, and cost-aware from day one.</p>
+            <div class="card-tags mono"><span>Civil 3D</span><span>Earthwork</span><span>Site layout</span></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-num mono">S.02</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3s6 6.2 6 10.2A6 6 0 0 1 6 13.2C6 9.2 12 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8.5 14.5c1.2-1 2.3-1 3.5 0s2.3 1 3.5 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Stormwater Management</h3>
+            <p>Detention ponds, drainage networks, and erosion-control details that satisfy reviewers and survive construction.</p>
+            <div class="card-tags mono"><span>Detention</span><span>Drainage</span><span>E&amp;SC</span></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-num mono">S.03</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 20h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M4 16c2.5-4 4.5-4 6-1s3.5 3 6-2 4-3 4-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M4 16v4M10 15v5M16 13v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+            </svg>
+            <h3>Hydrology &amp; Hydraulics</h3>
+            <p>Hydrologic modeling and HEC-RAS analysis that size your systems right — and defend the numbers when reviewers ask.</p>
+            <div class="card-tags mono"><span>HEC-RAS</span><span>Hydrology Studio</span></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-num mono">S.04</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 12h16M9 6v12M15 6v12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 1v2M4.2 2.8l1.2 1.4M19.8 2.8l-1.2 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Solar Civil Design</h3>
+            <p>Utility-scale PV civil packages — grading, drainage, access roads, and fencing — led by an NABCEP-certified engineer.</p>
+            <div class="card-tags mono"><span>NABCEP PVIP</span><span>Utility-scale</span></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-num mono">S.05</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 2.5h9l4 4V21.5H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M15 2.5v4h4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 12h7M9 15.5h7M9 8.5h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Permitting &amp; Construction Documents</h3>
+            <p>Complete permit sets and construction documents, drafted to move smoothly through jurisdictional review.</p>
+            <div class="card-tags mono"><span>Permit sets</span><span>CD sets</span></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-num mono">S.06</div>
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 8.5 15.5 12 12 15.5 8.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <h3>Value Engineering &amp; Constructability</h3>
+            <p>Plan review that catches risk early and trims cost without compromising safety, function, or approvals.</p>
+            <div class="card-tags mono"><span>Review</span><span>VE</span><span>Risk</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section section-dark" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index mono">02</span>
+          <h2>Selected work</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-tag mono">PROJECT RECORD</span>
+        </div>
+        <p class="section-lede reveal">
+          A selection of recent US deliveries — site, drainage, and solar civil packages
+          shipped to developers, EPCs, and contractors across three states and counting.
+        </p>
+
+        <div class="work-grid" data-stagger>
+
+          <article class="work-card reveal">
+            <figure class="work-fig" aria-hidden="true">
+              <svg viewBox="0 0 400 280" fill="none">
+                <!-- existing contours (solid) -->
+                <path d="M28 216 C 100 170, 190 248, 292 192 S 378 150, 396 160" stroke="currentColor" stroke-width="1.1"/>
+                <path d="M28 186 C 104 142, 196 216, 294 162 S 376 122, 396 132" stroke="currentColor" stroke-width="1.1"/>
+                <path d="M34 154 C 110 114, 200 184, 294 132 S 372 94, 392 104" stroke="currentColor" stroke-width="1.1" opacity=".75"/>
+                <path d="M44 124 C 118 88, 206 152, 292 104 S 366 68, 386 78" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+                <!-- proposed contours (dashed) -->
+                <path d="M40 202 C 112 160, 198 230, 296 178 S 378 138, 396 148" stroke="currentColor" stroke-width="1.1" stroke-dasharray="5 4" opacity=".9"/>
+                <path d="M48 170 C 120 130, 204 198, 296 148 S 374 108, 394 118" stroke="currentColor" stroke-width="1.1" stroke-dasharray="5 4" opacity=".65"/>
+                <!-- building pad with corner ticks -->
+                <rect x="150" y="96" width="96" height="58" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M150 96 l-7 -7 M246 96 l7 -7 M150 154 l-7 7 M246 154 l7 7" stroke="currentColor" stroke-width="1"/>
+                <text class="fig-label" x="156" y="90">BLDG PAD</text>
+                <!-- proposed grade + spot elevations -->
+                <path class="accent-stroke" d="M118 198 C 158 178, 220 188, 252 170 S 292 150, 312 152" stroke-width="1.6"/>
+                <path class="accent-stroke" d="M196 178 l6 10 h-12 Z"/>
+                <text class="fig-label" x="208" y="188">EL. 5412.0</text>
+                <path class="accent-stroke" d="M280 128 l6 10 h-12 Z"/>
+                <text class="fig-label" x="292" y="138">EL. 5414.5</text>
+                <!-- north arrow -->
+                <g stroke="currentColor" stroke-width="1.1">
+                  <circle cx="366" cy="42" r="14"/>
+                  <path d="M366 52 V 32 M366 32 l-5 8 M366 32 l5 8"/>
+                </g>
+                <text class="fig-label" x="362" y="70">N</text>
+                <!-- scale bar -->
+                <g stroke="currentColor" stroke-width="1.2">
+                  <path d="M292 246 h76"/>
+                  <path d="M292 242 v8 M330 242 v8 M368 242 v8"/>
+                </g>
+                <text class="fig-label" x="292" y="236">0&#8194;50&#8194;100 FT</text>
+                <text class="fig-label" x="32" y="262">GRADING PLAN — EXISTING VS. PROPOSED CONTOURS</text>
+              </svg>
+            </figure>
+            <div class="work-meta">
+              <span class="work-loc mono">Colorado, USA</span>
+              <h3>Multifamily Site Package</h3>
+              <p>Site planning and grading for a multifamily development — lot optimization, earthwork balance, and permit-ready sheets.</p>
+              <span class="work-type mono">Site / Grading</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <figure class="work-fig" aria-hidden="true">
+              <svg viewBox="0 0 400 280" fill="none">
+                <!-- pipe runs -->
+                <path d="M78 34 V 236" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M78 76 H 216 V 128 H 344" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M216 128 V 214" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M78 168 H 158 V 214" stroke="currentColor" stroke-width="1.3" opacity=".8"/>
+                <!-- flow arrows -->
+                <path class="accent-stroke" d="M78 116 l-5 -9 h10 Z"/>
+                <path class="accent-stroke" d="M78 200 l-5 -9 h10 Z"/>
+                <path class="accent-stroke" d="M150 76 l-9 -5 v10 Z"/>
+                <path class="accent-stroke" d="M216 176 l-5 -9 h10 Z"/>
+                <path class="accent-stroke" d="M158 214 l-5 -9 h10 Z"/>
+                <path class="accent-stroke" d="M348 128 l-10 -6 v12 Z"/>
+                <!-- structures -->
+                <circle cx="78" cy="76" r="7" class="accent-stroke" stroke-width="1.6"/>
+                <path d="M71 76 h14 M78 69 v14" stroke="currentColor" stroke-width="1"/>
+                <circle cx="78" cy="168" r="7" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M71 168 h14 M78 161 v14" stroke="currentColor" stroke-width="1"/>
+                <circle cx="216" cy="128" r="7" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M209 128 h14 M216 121 v14" stroke="currentColor" stroke-width="1"/>
+                <text class="fig-label" x="228" y="120">CB-01</text>
+                <text class="fig-label" x="90" y="68">INLET A</text>
+                <text class="fig-label" x="330" y="118">OUT-01</text>
+                <!-- pipe label -->
+                <text class="fig-label" x="108" y="92">18" RCP @ 1.2%</text>
+                <!-- detention basin -->
+                <path d="M258 178 C 264 154, 318 148, 342 166 C 366 184, 356 212, 316 218 C 276 224, 252 202, 258 178 Z" stroke="currentColor" stroke-width="1.1" stroke-dasharray="5 4"/>
+                <path d="M276 186 l10 -8 M292 196 l12 -10 M310 202 l12 -10" stroke="currentColor" stroke-width="1" opacity=".6"/>
+                <text class="fig-label" x="272" y="238">DETENTION BASIN</text>
+                <!-- north arrow -->
+                <g stroke="currentColor" stroke-width="1.1">
+                  <circle cx="366" cy="42" r="14"/>
+                  <path d="M366 52 V 32 M366 32 l-5 8 M366 32 l5 8"/>
+                </g>
+                <text class="fig-label" x="362" y="70">N</text>
+                <text class="fig-label" x="32" y="262">DRAINAGE NETWORK — PLAN · FLOW ARROWS SHOWN</text>
+              </svg>
+            </figure>
+            <div class="work-meta">
+              <span class="work-loc mono">California, USA</span>
+              <h3>Residential Grading &amp; Drainage</h3>
+              <p>Lot grading and stormwater drainage design for a residential development, with construction-ready details.</p>
+              <span class="work-type mono">Residential</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <figure class="work-fig" aria-hidden="true">
+              <svg viewBox="0 0 400 280" fill="none">
+                <!-- setback / property line -->
+                <rect x="42" y="36" width="316" height="196" stroke="currentColor" stroke-width="1.1" stroke-dasharray="6 5"/>
+                <!-- building with entry tick -->
+                <rect x="70" y="64" width="118" height="64" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M122 128 v7 h14 v-7" stroke="currentColor" stroke-width="1.1"/>
+                <text class="fig-label" x="76" y="56">BLDG A</text>
+                <!-- dimension line -->
+                <g stroke="currentColor" stroke-width="1">
+                  <path d="M70 52 H 188"/>
+                  <path d="M70 48 v8 M188 48 v8"/>
+                </g>
+                <text class="fig-label" x="108" y="46">118.0'</text>
+                <!-- parking: two rows + drive aisle -->
+                <path d="M70 150 H 218 M70 172 H 218" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M70 196 H 218 M70 218 H 218" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M78 150v22M96 150v22M114 150v22M132 150v22M150 150v22M168 150v22M186 150v22M204 150v22" stroke="currentColor" stroke-width="1.1"/>
+                <path d="M78 196v22M96 196v22M114 196v22M132 196v22M150 196v22M168 196v22M186 196v22M204 196v22" stroke="currentColor" stroke-width="1.1"/>
+                <!-- ADA stalls -->
+                <rect x="228" y="150" width="22" height="22" class="accent-stroke" stroke-width="1.5"/>
+                <path class="accent-stroke" d="M228 150 l22 22 M250 150 l-22 22" stroke-width="1" opacity=".7"/>
+                <text class="fig-label" x="228" y="186">ADA</text>
+                <!-- landscape islands -->
+                <circle cx="300" cy="161" r="9" stroke="currentColor" stroke-width="1.1"/>
+                <path d="M294 167 l12 -12 M300 152 v18" stroke="currentColor" stroke-width="1" opacity=".7"/>
+                <circle cx="300" cy="207" r="9" stroke="currentColor" stroke-width="1.1"/>
+                <path d="M294 213 l12 -12 M300 198 v18" stroke="currentColor" stroke-width="1" opacity=".7"/>
+                <!-- sidewalk -->
+                <path d="M42 240 H 358 M42 245 H 358" stroke="currentColor" stroke-width="1" opacity=".8"/>
+                <!-- north arrow -->
+                <g stroke="currentColor" stroke-width="1.1">
+                  <circle cx="330" cy="62" r="13"/>
+                  <path d="M330 71 V 53 M330 53 l-5 8 M330 53 l5 8"/>
+                </g>
+                <text class="fig-label" x="326" y="88">N</text>
+                <text class="fig-label" x="32" y="262">COMMERCIAL SITE PLAN — PARKING, ADA &amp; SETBACKS</text>
+              </svg>
+            </figure>
+            <div class="work-meta">
+              <span class="work-loc mono">North Carolina, USA</span>
+              <h3>Commercial Site Plan</h3>
+              <p>Permit-ready commercial site plan with building placement, parking layout, and setback compliance.</p>
+              <span class="work-type mono">Commercial</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <figure class="work-fig" aria-hidden="true">
+              <svg viewBox="0 0 400 280" fill="none">
+                <!-- fence perimeter with corner posts -->
+                <rect x="36" y="42" width="276" height="188" stroke="currentColor" stroke-width="1.1" stroke-dasharray="8 5"/>
+                <rect x="33" y="39" width="6" height="6" stroke="currentColor" stroke-width="1.1"/>
+                <rect x="309" y="39" width="6" height="6" stroke="currentColor" stroke-width="1.1"/>
+                <rect x="33" y="227" width="6" height="6" stroke="currentColor" stroke-width="1.1"/>
+                <rect x="309" y="227" width="6" height="6" stroke="currentColor" stroke-width="1.1"/>
+                <!-- panel table blocks: 3 cols x 4 rows -->
+                <g stroke="currentColor" stroke-width="1.1">
+                  <rect x="52" y="60" width="72" height="12"/><rect x="52" y="96" width="72" height="12"/><rect x="52" y="132" width="72" height="12"/><rect x="52" y="168" width="72" height="12"/><rect x="52" y="204" width="72" height="12"/>
+                  <rect x="140" y="60" width="72" height="12"/><rect x="140" y="96" width="72" height="12"/><rect x="140" y="132" width="72" height="12"/><rect x="140" y="168" width="72" height="12"/><rect x="140" y="204" width="72" height="12"/>
+                  <rect x="228" y="60" width="72" height="12"/><rect x="228" y="96" width="72" height="12"/><rect x="228" y="132" width="72" height="12"/><rect x="228" y="168" width="72" height="12"/><rect x="228" y="204" width="72" height="12"/>
+                </g>
+                <!-- tilt ticks -->
+                <g stroke="currentColor" stroke-width="1" opacity=".55">
+                  <path d="M56 72 l6 6 M144 72 l6 6 M232 72 l6 6 M56 144 l6 6 M144 144 l6 6 M232 144 l6 6 M56 216 l6 6 M144 216 l6 6 M232 216 l6 6"/>
+                </g>
+                <!-- inverter pads -->
+                <rect x="288" y="88" width="14" height="14" class="accent-stroke" stroke-width="1.5"/>
+                <text class="fig-label" x="270" y="82">INV-1</text>
+                <rect x="288" y="170" width="14" height="14" class="accent-stroke" stroke-width="1.5"/>
+                <text class="fig-label" x="270" y="164">INV-2</text>
+                <!-- access road: edges + centerline -->
+                <path d="M340 42 V 230 M356 42 V 230" stroke="currentColor" stroke-width="1.2"/>
+                <path class="accent-stroke" d="M348 42 V 226" stroke-width="1.4" stroke-dasharray="8 6"/>
+                <path class="accent-stroke" d="M348 234 l-6 -12 h12 Z"/>
+                <text class="fig-label" x="330" y="32">ACCESS RD</text>
+                <!-- north arrow -->
+                <g stroke="currentColor" stroke-width="1.1">
+                  <circle cx="380" cy="60" r="12"/>
+                  <path d="M380 68 V 52 M380 52 l-4 7 M380 52 l4 7"/>
+                </g>
+                <text class="fig-label" x="376" y="84">N</text>
+                <text class="fig-label" x="32" y="262">UTILITY-SCALE PV — ARRAY, FENCE &amp; ACCESS</text>
+              </svg>
+            </figure>
+            <div class="work-meta">
+              <span class="work-loc mono">United States</span>
+              <h3>Utility-Scale Solar Civil</h3>
+              <p>PV civil design packages — array grading, drainage, and access roads — for utility-scale solar facilities.</p>
+              <span class="work-type mono">Solar PV</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index mono">03</span>
+          <h2>How we deliver</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-tag mono">PROCESS</span>
+        </div>
+
+        <ol class="process-grid" data-stagger>
+          <li class="process-step reveal">
+            <span class="step-node mono">01</span>
+            <h3>Discover</h3>
+            <p>We lock the scope, pull site data, and map jurisdictional constraints before a single line is drawn.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-node mono">02</span>
+            <h3>Model</h3>
+            <p>Terrain, hydrology, and design alternatives built in Civil 3D and HEC-RAS — options you can compare.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-node mono">03</span>
+            <h3>Design</h3>
+            <p>The winning scheme gets detailed and value-engineered: fewer yards of dirt, fewer risks, cleaner sheets.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-node mono">04</span>
+            <h3>Deliver</h3>
+            <p>Permit-ready drawings with responsive revisions — we stay with you through review comments.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-tint" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-card">
+            <svg viewBox="0 0 300 300" fill="none">
+              <path d="M20 230 C 70 190, 110 250, 160 210 S 250 160, 285 180" stroke="rgba(237,232,221,.35)" stroke-width="1.2"/>
+              <path d="M20 195 C 70 155, 115 215, 165 175 S 250 125, 285 145" stroke="rgba(237,232,221,.35)" stroke-width="1.2"/>
+              <path d="M20 160 C 72 122, 118 180, 168 140 S 252 92, 284 110" stroke="rgba(237,232,221,.35)" stroke-width="1.2"/>
+              <path d="M20 125 C 74 90, 120 145, 170 105 S 254 60, 283 78" stroke="rgba(237,232,221,.35)" stroke-width="1.2"/>
+              <path d="M100 128 h100 M150 128 v96" stroke="#EDE8DD" stroke-width="10" stroke-linecap="square"/>
+              <text x="150" y="262" text-anchor="middle" fill="#EDE8DD" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="3">TERRALINE CIVIL — EST. 2026</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <div class="section-head reveal">
+            <span class="section-index mono">04</span>
+            <h2>The studio behind the line</h2>
+          </div>
+          <p class="reveal">
+            TerraLine Civil is a civil design studio serving developers, EPCs, and A/E
+            firms across the United States — a coordinated team of engineers and CAD
+            designers working to US project standards.
+          </p>
+          <p class="reveal">
+            We pair deep software fluency — Civil 3D for terrain, HEC-RAS for water —
+            with a designer's eye for sheets that reviewers actually enjoy reading.
+            Every package ships permit-ready, value-engineered, and on schedule.
+          </p>
+          <ul class="cred-list" data-stagger>
+            <li class="reveal"><span class="cred-mark mono">+</span>NABCEP Board Certified PVIP on staff</li>
+            <li class="reveal"><span class="cred-mark mono">+</span>Degree civil engineers on staff — BSc, UET Lahore</li>
+            <li class="reveal"><span class="cred-mark mono">+</span>90% job-success delivery record across US engagements</li>
+            <li class="reveal"><span class="cred-mark mono">+</span>Civil 3D · HEC-RAS · Hydrology Studio · ArcGIS · PV*Sol</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLS STRIP ============ -->
+    <div class="tools-strip reveal" aria-label="Software and tools">
+      <div class="container tools-inner mono">
+        <span>AutoCAD Civil 3D</span><span class="sep">//</span>
+        <span>HEC-RAS</span><span class="sep">//</span>
+        <span>Hydrology Studio</span><span class="sep">//</span>
+        <span>ArcGIS</span><span class="sep">//</span>
+        <span>PV*Sol</span><span class="sep">//</span>
+        <span>SketchUp</span>
+      </div>
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index mono">05</span>
+          <h2>Start a project</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-tag mono">CONTACT</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="contact-lede">
+              Have a site that needs grading, a pond that needs sizing, or a solar field
+              that needs civil? Tell us about it — we reply within one business day.
+            </p>
+            <ul class="contact-list mono">
+              <!-- TODO: replace with your real email -->
+              <li><span class="contact-key">EMAIL</span><a href="mailto:hello@terralinecivil.com">hello@terralinecivil.com</a></li>
+              <li><span class="contact-key">LINKEDIN</span><a href="https://www.linkedin.com/company/terraline-civil" target="_blank" rel="noopener">linkedin.com/company/terraline-civil</a></li>
+              <li><span class="contact-key">HOURS</span>Mon–Sat — overlapping all US time zones</li>
+              <li><span class="contact-key">BASE</span>Serving all 50 US states</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" data-delay="1">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="mono" for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Jane Smith">
+              </div>
+              <div class="form-field">
+                <label class="mono" for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="jane@company.com">
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="mono" for="cf-type">Project type</label>
+              <select id="cf-type" name="project_type">
+                <option>Grading &amp; Site Design</option>
+                <option>Stormwater Management</option>
+                <option>Hydrology / HEC-RAS</option>
+                <option>Solar Civil Design</option>
+                <option>Permit Drawings</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="mono" for="cf-msg">Project details</label>
+              <textarea id="cf-msg" name="message" rows="5" required placeholder="Location, acreage, timeline, and what you need…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-solid btn-block">Send inquiry <span class="btn-arrow" aria-hidden="true">→</span></button>
+            <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-wordmark" aria-hidden="true">TERRALINE</div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-tag mono">CIVIL DESIGN STUDIO</p>
+          <p class="footer-blurb">Precision civil design for land, water, and energy — from first contour to final permit.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-tag mono">SITEMAP</p>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-tag mono">ELSEWHERE</p>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/company/terraline-civil" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@terralinecivil.com">Email</a></li>
+            <li><a href="mailto:hello@terralinecivil.com?subject=Proposal%20Request">Request a proposal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom mono">
+        <span>© <span id="year">2026</span> TerraLine Civil. All rights reserved.</span>
+        <span>31.5204° N, 74.3587° E — LAHORE · SERVING ALL 50 US STATES</span>
+        <a href="#home" class="back-top">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

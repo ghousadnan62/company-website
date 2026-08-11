@@ -1,0 +1,28 @@
+# OS-generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local work previews
+.work-preview.png
+
+# Dependencies / build artifacts
+node_modules/
+dist/
+build/
+
+# Logs & environment
+*.log
+.env
+.env.local
