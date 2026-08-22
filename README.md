@@ -48,7 +48,7 @@ site are relative, so it works in both modes with zero changes.
 
 The form posts to **FormSubmit** (free, no backend needed):
 
-1. Open `js/main.js` and replace `hello@terralinecivil.com` in `FORM_ENDPOINT`
+1. Open `js/main.js` and replace `info@terralinecivil.com` in `FORM_ENDPOINT`
    with your real email address (also update it in `index.html` where it appears).
 2. Submit the form once — FormSubmit sends you an activation email. Confirm it.
 3. Done: all inquiries land in your inbox.
@@ -57,9 +57,9 @@ Alternative: swap the endpoint for a Formspree/Basin/Netlify-style handler if pr
 
 ## Customization checklist
 
-- [ ] Replace `hello@terralinecivil.com` (index.html ×3, main.js ×1) with real email
+- [x] Replace `hello@terralinecivil.com` with `info@terralinecivil.com` (index.html + main.js)
 - [ ] Add real project photos later if desired (replace the SVG drawings in the Work section)
-- [ ] Update `sitemap.xml` + `robots.txt` with the final URL
+- [x] Update `sitemap.xml` + `robots.txt` with the final URL
 - [ ] Optional: add an `assets/og-image.png` (1200×630) for link-preview cards
   (already referenced in the HTML head)
 

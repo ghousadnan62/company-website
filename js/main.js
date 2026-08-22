@@ -102,7 +102,7 @@
   /* ---------- Contact form (FormSubmit AJAX) ----------
      TODO: replace the email below with Adnan's real inbox.
      First submission triggers a one-time activation email from FormSubmit. */
-  var FORM_ENDPOINT = "https://formsubmit.co/ajax/hello@terralinecivil.com";
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/info@terralinecivil.com";
 
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
@@ -132,7 +132,7 @@
         })
         .catch(function () {
           status.textContent =
-            "SOMETHING WENT WRONG — PLEASE EMAIL US DIRECTLY AT HELLO@TERRALINECIVIL.COM";
+            "SOMETHING WENT WRONG — PLEASE EMAIL US DIRECTLY AT INFO@TERRALINECIVIL.COM";
         });
     });
   }
