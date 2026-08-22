@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace YOUR-USERNAME with your GitHub username (or your custom domain) once live:
-# Sitemap: https://YOUR-USERNAME.github.io/sitemap.xml
+Sitemap: https://terralinecivil.com/sitemap.xml
